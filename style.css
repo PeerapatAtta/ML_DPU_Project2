@@ -1,0 +1,145 @@
+header {
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+}
+
+/* กำหนดสีข้อความใน header */
+header .nav-link {
+  color: white !important;
+}
+
+header .nav-link.active {
+  color: white !important;
+  background-color: blue !important;
+  /* พื้นหลัง active */
+}
+
+header a {
+  color: white;
+  /* สีข้อความของลิงก์ */
+}
+
+header a:hover {
+  color: lightgray;
+  /* สีเมื่อ hover */
+}
+
+body {
+  background-color: #ffffff;
+  /* พื้นหลังสีขาว */
+  color: #000000;
+  /* ข้อความสีดำ */
+  font-family: 'Arial', sans-serif;
+}
+
+/* หัวข้อหลัก */
+h1 {
+  color: #000000;
+  font-weight: bold;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+/* ข้อความ tagline */
+.tagline {
+  color: #666666;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+/* การจัดเรียงปุ่มควบคุม */
+.controls {
+  text-align: center;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.controls button,
+.controls input {
+  margin: 5px;
+  padding: 10px 20px;
+}
+
+.button-group {
+  margin-bottom: 10px;
+  /* เพิ่มระยะห่างระหว่างกลุ่มปุ่ม */
+}
+
+/* ปุ่ม Start Webcam - สีเขียว */
+.btn-primary {
+  background-color: #067655;
+  color: #ffffff;
+  border-color: #067655;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-success:hover,
+.btn-danger:hover,
+.btn-primary:hover,
+.btn-warning:hover {
+  background-color: #C04141;
+  color: #ffffff;
+  border-color: #C04141;
+  box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.5);
+  transform: scale(1.05);
+  /* ขยายเล็กน้อยเมื่อ hover */
+}
+
+/* ปุ่มหยุดกล้อง - สีดำ */
+.btn-danger {
+  background-color: #1C1C1C;
+  color: #ffffff;
+  border-color: #1C1C1C;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ปุ่มอัปโหลด */
+
+.btn-success {
+  background-color: #1C1C1C;
+  color: #ffffff;
+  border-color: #1C1C1C;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ปุ่มรีเซ็ต */
+.btn-warning {
+  background-color: #E0AC1C;
+  color: #000000;
+  border: 2px solid #E0AC1C;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* การออกแบบ canvas */
+canvas {
+  width: 90%;
+  max-width: 800px;
+  /* max-height: 550px; */
+  height: auto;
+  border: 2px solid #000000;
+  margin: 10px auto;
+  display: block;
+}
+
+/* ข้อความแสดงสถานะ */
+#statusMessage {
+  font-size: 16px;
+  color: #666666;
+}
+
+
+#spline-watermark-cover {
+  position: absolute;
+  bottom: 2%;
+  right: -2%;
+  width: 500px; /* Adjust width */
+  height: 50px; /* Adjust height */
+  background-color: rgb(7, 7, 7);
+  z-index: 100;
+}
